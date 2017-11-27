@@ -67,7 +67,7 @@ public class UserProfile extends AppCompatActivity {
 
         //Button Stuff here
         Button button1 = (Button)findViewById(R.id.button1);
-        Button button2 = (Button)findViewById(R.id.button2);
+        //Button button2 = (Button)findViewById(R.id.button2);
 
         button1.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -78,7 +78,7 @@ public class UserProfile extends AppCompatActivity {
                 startActivity(int1);
             }
         });
-
+        /*
         button2.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
@@ -87,6 +87,7 @@ public class UserProfile extends AppCompatActivity {
                 startActivity(int2);
             }
         });
+        */
     }
 
 }

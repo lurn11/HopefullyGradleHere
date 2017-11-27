@@ -46,13 +46,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
         */
-        googleMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
-        googleMap.addMarker(new MarkerOptions().position(new LatLng(30.623710, -96.338334)).title("Lot 50 Parking Spot 1").snippet("Not filled"));
+        googleMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
+        googleMap.addMarker(new MarkerOptions().position(new LatLng(30.642075, -96.317176)).title("Parking Spot 1").snippet("Not filled"));
 
-        Marker m2 = googleMap.addMarker(new MarkerOptions().position(new LatLng(30.623953, -96.338047)).title("Lot 50 Parking Spot 2").snippet("Filled"));
-        Marker m3 = googleMap.addMarker(new MarkerOptions().position(new LatLng(30.623574, -96.336781)).title("Lot 50 Parking Spot 3").snippet("Filled"));
+        Marker m2 = googleMap.addMarker(new MarkerOptions().position(new LatLng(30.642106, -96.317131)).title("Parking Spot 2").snippet("Not Filled"));
+        Marker m3 = googleMap.addMarker(new MarkerOptions().position(new LatLng(30.642137, -96.317088)).title("Parking Spot 3").snippet("Not Filled"));
 
-        CameraPosition Liberty = CameraPosition.builder().target(new LatLng(30.623710, -96.338334)).zoom(16).bearing(0).tilt(45).build();
+        CameraPosition Liberty = CameraPosition.builder().target(new LatLng(30.642075, -96.317176)).zoom(20).bearing(0).tilt(0).build();
         googleMap.moveCamera(CameraUpdateFactory.newCameraPosition(Liberty));
     }
 }
