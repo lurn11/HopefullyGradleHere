@@ -56,23 +56,27 @@ tools:context="in.studytitorial.androidfaceboklogin.UserProfile">
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button 1"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="268dp"
-        android:layout_marginTop="58dp"
-        android:layout_below="@+id/textView2"
-        android:layout_alignStart="@+id/button2" />
+        android:text="Parking Near Me"
+        android:textSize="24sp"
+        android:minHeight="150dip"
+        android:minWidth="150dip"
+        android:paddingLeft="75dip"
+        android:paddingRight="75dip"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button 2"
-        tools:layout_editor_absoluteX="147dp"
-        tools:layout_editor_absoluteY="374dp"
-        android:layout_marginTop="68dp"
-        android:layout_below="@+id/button1"
-        android:layout_centerHorizontal="true" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/streetparking"
+        android:scaleType = "centerCrop"
+
+        />
 
 </RelativeLayout>
 
