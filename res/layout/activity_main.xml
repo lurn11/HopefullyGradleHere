@@ -20,7 +20,20 @@
         android:scaleType = "centerCrop"
 
         />
+    <TextView
+        android:id="@+id/texttest"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="#a3a3ff"
+        />
 
+    <TextView
+        android:id="@+id/texttest2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="#a3a3ff"
+        android:layout_margin="100dp"
+        />
 
     <com.facebook.login.widget.LoginButton
         android:id="@+id/login_button"

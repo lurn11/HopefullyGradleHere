@@ -23,6 +23,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 
+
 //import com.squareup.picasso.Picasso;
 
 import org.json.JSONObject;
@@ -39,9 +40,8 @@ public class UserProfile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_profile);
 
+
         //Drawer stuff here
-
-
         Intent intent = getIntent();
         String jsondata = intent.getStringExtra("userProfile");
         Log.w("Jsondata", jsondata);
@@ -90,4 +90,7 @@ public class UserProfile extends AppCompatActivity {
         */
     }
 
+
+
 }
+
